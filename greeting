@@ -39,5 +39,5 @@ conky.config = {
 };
 
 conky.text = [[
-  $alignr${color1}${font Product Sans Light:size=18}Good ${execi 60 ~/.conky/EmbraceTheme/scripts/greeting.sh}
+  $alignr${color1}${font Product Sans Light:size=18}Good ${execi 60 ~/.conky/EmbraceConky/scripts/greeting.sh}
 ]];
