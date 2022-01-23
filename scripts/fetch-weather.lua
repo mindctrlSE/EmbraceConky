@@ -25,35 +25,35 @@ measure = '°' .. (cf == 'metric' and 'C' or 'F')
 
 -- Default icons (day)
 icons = {
-    ["01"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -7}${offset 1}", --sun
-    ["02"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -7}${offset 1}", --sun & clouds
-    ["03"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -7}${offset 1}",
-    ["04"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -7}${offset 1}",
-    ["09"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -7}${offset 1}",
-    ["10"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -7}${offset 1}",
-    ["11"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -7}${offset 1}",
-    ["13"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -7}${offset 1}",
-    ["50"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -7}${offset 1}",
+    ["01"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -9}${offset 1}", --sun
+    ["02"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -9}${offset 1}", --sun & clouds
+    ["03"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -9}${offset 1}",
+    ["04"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -9}${offset 1}",
+    ["09"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -9}${offset 1}",
+    ["10"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -9}${offset 1}",
+    ["11"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -9}${offset 1}",
+    ["13"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -9}${offset 1}",
+    ["50"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -9}${offset 1}",
   }
 
 time = os.date("*t") -- time.hour
 
 if(time.hour < 6) -- Night icons
 then
-    icons["01"]="${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -7}${offset 1}"
-    icons["02"]="${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -7}${offset 1}"
-    icons["10"]="${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -7}${offset 1}"
+    icons["01"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -9}${offset 1}"
+    icons["02"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -9}${offset 1}"
+    icons["10"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -9}${offset 1}"
 
 elseif(time.hour < 18) -- Day Icons
 then
-    icons["01"]="${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -7}${offset 1}"
-    icons["02"]="${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -7}${offset 1}"
-    icons["10"]="${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -7}${offset 1}"
+    icons["01"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -9}${offset 1}"
+    icons["02"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -9}${offset 1}"
+    icons["10"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -9}${offset 1}"
 
 else -- Night icons
-    icons["01"]="${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -7}${offset 1}"
-    icons["02"]="${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -7}${offset 1}"
-    icons["10"]="${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -7}${offset 1}"
+    icons["01"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -9}${offset 1}"
+    icons["02"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -9}${offset 1}"
+    icons["10"] = "${font EmbraceConkyIcons:size=14}${color1}${font Product Sans Light:size=18}${color1}${voffset -9}${offset 1}"
 end
 
 cache_file = "weather.json"
